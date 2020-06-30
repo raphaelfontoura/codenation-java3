@@ -15,8 +15,6 @@ import java.util.stream.Collectors;
 public class Main {
 	private class Jogador {
 
-		//private Integer id; // 0
-		//private String name; // 1
 		private String full_name; // 2
 		private String club; // 3
 		private Integer age; // 6
@@ -27,8 +25,7 @@ public class Main {
 
 		public Jogador(@Deprecated Integer id, @Deprecated String name, String full_name, String club, Integer age, String nationality,
 				Double eur_release_clause, Date birth_date, Double eur_wage) {
-			//this.id = id;
-			//this.name = name;
+
 			this.full_name = full_name;
 			this.club = club;
 			this.age = age;

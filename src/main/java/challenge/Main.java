@@ -17,10 +17,6 @@ public class Main {
 	
 	private static CsvFileUtil fileCsv = new CsvFileUtil("data.csv",",");
 	
-//	public static void main(String[] args) {
-//		q4();
-//		q5();
-//	}
 	
 	private static List<Jogador> leiaJogadores(){
 		try {
@@ -87,7 +83,6 @@ public class Main {
 		
 		jogadores.sort(Comparator.comparing(Jogador::getEurRelClause).reversed());
 		jogadores.subList(0, 10).forEach(jogador -> names.add(jogador.getFullName()));
-//		System.out.println(names);
 		return names;
 	}
 
@@ -100,9 +95,6 @@ public class Main {
 				.thenComparing(Comparator.comparing(Jogador::getEurWage)))
 				.map(Jogador::getFullName);
 		
-//		jogadores.sort(Comparator.comparing(Jogador::getBirthDate).reversed());
-//		jogadores.subList(0, 10).forEach(jogador -> names.add(jogador.getFullName()));
-//		System.out.println(names);
 		return names.limit(10).collect(Collectors.toList());
 	}
 
